@@ -48,5 +48,17 @@ public class TestTeam {
   }
   
   // TODO testGetHeadcoach
+  @Test
+  public void testGetHeadcoach(){
+    final String headcoach = "Klinsmann";
+    final Team t = makeTeamFixture("USA", headcoach, 500);
+    assertEquals(headcoach, t.getHeadcoach());
+  }
   // TODO testGetFunding
+  @Test
+  public void testGetFunding(){
+    final int funding = 500;
+    final Team t = makeTeamFixture("USA", "Klinsmann", funding);
+    assertEquals(funding, t.getFunding());
+  }
 }
