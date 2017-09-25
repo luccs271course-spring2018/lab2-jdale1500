@@ -12,16 +12,34 @@ public class TestTeam {
   @Test
   public void testConstructorValidName() {
     try {
-      new Team(null, "Klinsmann", 500);
+      new Team("USA", "Klinsmann", 500);
       fail("should have thrown IllegalArgumentException");
     } catch (final Throwable ex) {
       // if we landed here, we're good!
     }
   }
   
+  
   // TODO testConstructorValidHeadcoach
+  @Test
+  public void testConstructorValidHeadcoach(){
+    try{
+      new Team("USA", "Klinsmann", 500);
+      fail("should have thrown IllegalArgumentException");
+    } catch (final Throwable ex){
+      
+    }
+  }
   // TODO testConstructorValidFunding
-
+  @Test
+  public void testConstructorValidFunding(){
+    try{
+      new Team("USA", "Klinsmann", 500);
+      fail("should have thrown IllegalArgumentException");
+    } catch (final Throwable ex){
+      
+    }
+  }
   @Test
   public void testGetName() {
     final String name = "USA";

@@ -18,6 +18,7 @@ public class Main {
 
     // Get team name
     System.out.print("Enter name to search: ");
+    
     final String key = keyboard.nextLine();
     System.out.println("Looking for team " + key);
 
@@ -29,7 +30,7 @@ public class Main {
     final Optional<Integer> index2 = Search.findTeamPosition(list, key);
     checkTeamListIndex(list, index2);
 
-    // Get funding level
+    // // Get funding level
     System.out.print("Enter min funding to search: ");
     final String fundingString = keyboard.nextLine();
     final int funding = Integer.parseInt(fundingString);
